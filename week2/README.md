@@ -1,15 +1,11 @@
 # Week 2 - Array, Loops, and Object Literals
 
-## Code Exercies
+## Instructions
 
-As part of the web frameworks course, students are required to submit exercises weekly that strengthen their understanding of OOP concepts using javascript and/or typescript.
+Each source file contains what is required for each number. Add the code necessary to complete the required exercise where specified.
 
-Submissions should be made by forking this repo into each students' github account.
+## Submitting
 
-## Requirements and Caveats
+When completed, submit your assignments to WorldClass for the link pasting the url of you github link for the week.
 
-Use the following guidlines as reminders for your submissions.
-
-- Use ES6 as the primary javascript target.
-- All scripts should be linted before submission.
-- When specified, `.ts` files should be compiled to `.js`.
+Ex.: https://github.com/chan1ks/MSSE663-js-assignments/tree/master/week2
