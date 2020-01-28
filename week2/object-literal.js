@@ -20,7 +20,6 @@ let monkey = {
     }
 };
 
-console.log(monkey);
 console.log(monkey.getBreed());
 console.log(monkey.getAgeString());
 
@@ -54,7 +53,6 @@ class Monkey {
 }
 
 let testMonkey = new Monkey('James', 13, 'm', 'Chimp');
-console.log(Monkey);
 console.log(testMonkey);
 console.log(testMonkey.getName());
 console.log(testMonkey.getAgeString());
