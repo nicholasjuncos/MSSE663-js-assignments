@@ -8,11 +8,17 @@
  * - Then Hoist the callback function.
  *
  */
-const things = ['thing1', 'thing2'];
+export const things = ['thing1', 'thing2'];
 
-// create callback here
+export const objectFunction = (element: string) => {
+    let name = element.slice(0, element.length-1);
+    let id = Number(element.slice(element.length-1));
+    return {id, name};
+};
 
-// create map here
+export const objectArrayFunction = (arr: Array<string>) => {
+    return arr.map(element => objectFunction(element));
+};
 
 /**
  * #2 Higher order then curry.
@@ -22,4 +28,17 @@ const things = ['thing1', 'thing2'];
  * - Hoist that filter callback and curry all functions.
  */
 
-// create function here
+export interface thingObject {
+    id: number,
+    name: string
+}
+
+export const thingFunction = (key: string) => {
+    let objectArray = objectArrayFunction(things);
+    let newKey = Number(key);
+    return objectArray.filter(element => thingFilter(element, newKey));
+};
+
+export const thingFilter = (thing: thingObject, key: number) => {
+    return (thing.id == key);
+};
